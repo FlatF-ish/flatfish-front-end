@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:backgroundTint="@color/darkThemeSurfaceColor"
+    tools:context=".JoinFlatActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_details"
+        android:textColor="@color/colorHighEmphasis"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_key"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:backgroundTint="@color/colorHighEmphasis"
+        android:ems="10"
+        android:hint="@string/hint_key"
+        android:inputType="textPersonName"
+        android:maxLength="@integer/maxLength"
+        android:textColor="@color/colorHighEmphasis"
+        android:textColorHint="@color/colorHighEmphasis"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/text_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:backgroundTint="@color/colorHighEmphasis"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPersonName"
+        android:maxLength="@integer/maxLength"
+        android:textColor="@color/colorHighEmphasis"
+        android:textColorHint="@color/colorHighEmphasis"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_key" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:background="@drawable/button_rounded"
+        android:onClick="onJoinFlat"
+        android:padding="15dp"
+        android:text="@string/label_join"
+        android:textColor="@color/colorHighEmphasis"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_password" />
+
+    <TextView
+        android:id="@+id/text_invalid_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:text="@string/invalid"
+        android:textColor="@color/invalid"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_key" />
+
+    <TextView
+        android:id="@+id/text_invalid_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:text="@string/invalid"
+        android:textColor="@color/invalid"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_password" />
+
+    <ProgressBar
+        android:id="@+id/progress_spinner"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

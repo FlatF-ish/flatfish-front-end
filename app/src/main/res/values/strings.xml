@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FlatFish</string>
+    <string name="button_create_flat">Create a new flat</string>
+    <string name="button_join_flat">Join an existing flat</string>
+    <string name="hint_password">Password</string>
+    <string name="label_password">Enter a password for the flat</string>
+    <string name="label_key">Here is your house key!</string>
+    <string name="label_join">Join</string>
+    <string name="label_details">Enter the details for the flat</string>
+    <string name="invalid">Invalid</string>
+    <string name="hint_key">Key</string>
+    <string name="label_name" >Enter your details</string>
+    <string name="button_finish">Finish</string>
+    <string name="label_firstname" >Firstname</string>
+    <string name="label_pronoun">Pronoun</string>
+    <string name="label_color">Favourite color</string>
+    <string name="label_create">Create</string>
+    <string name="label_continue">Continue</string>
+</resources>
